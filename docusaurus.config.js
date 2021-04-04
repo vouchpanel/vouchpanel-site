@@ -1,34 +1,26 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 
-const path = require("path")
+const path = require("path");
 
 module.exports = {
-  title: "My Site",
-  tagline: "The tagline of my site",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Vouchpanel",
+  tagline: "The simplest way to embed tweets and testimonials on your website.",
+  url: "https://vouchpanel.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "vouchpanel", // Usually your GitHub org/user name.
+  projectName: "vouchpanel", // Usually your repo name.
   plugins: [
     path.resolve(__dirname, "plugins/loaders"),
     "@docusaurus/plugin-ideal-image",
-    [
-      "@docusaurus/plugin-sitemap",
-      {
-        changefreq: "weekly",
-        priority: 0.5,
-        trailingSlash: false,
-      },
-    ],
   ],
   themeConfig: {
     navbar: {
-      title: "My Site",
+      title: "Vouchpanel",
       logo: {
-        alt: "My Site Logo",
+        alt: "Vouchpanel Logo",
         src: "img/logo.svg",
       },
       items: [
@@ -40,7 +32,7 @@ module.exports = {
         },
         { to: "blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/vouchpanel",
           label: "GitHub",
           position: "right",
         },
@@ -84,12 +76,12 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/vouchpanel/",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Vouchpanel, Inc.`,
     },
   },
   presets: [
