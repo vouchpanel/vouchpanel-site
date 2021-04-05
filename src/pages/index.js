@@ -1,13 +1,12 @@
 import React from "react";
 import clsx from "clsx";
-import Layout from "@theme/Layout";
+import Layout from "../theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import { Hero } from "../components/Hero";
 import { Features } from "../components/Features";
-import { Footer } from "../components/Footer";
 
 const features = [
   {
@@ -71,7 +70,6 @@ export default function Home() {
       <main>
         <Features></Features>
       </main>
-      <Footer></Footer>
     </Layout>
   );
 }

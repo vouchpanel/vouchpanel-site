@@ -3,7 +3,7 @@
 const path = require("path");
 
 module.exports = {
-  title: "Vouchpanel",
+  title: "vouchpanel",
   tagline: "The simplest way to embed tweets and testimonials on your website.",
   url: "https://vouchpanel.com",
   baseUrl: "/",
@@ -51,19 +51,28 @@ module.exports = {
           ],
         },
         {
-          title: "Community",
+          title: "Pricing",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Pricing",
+              to: "pricing/",
+            },
+          ],
+        },
+        {
+          title: "Features",
+          items: [
+            {
+              label: "Content Delivery Network",
+              href: "features/content-delivery-network/",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "Small Size",
+              href: "features/small-size/",
             },
             {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "No Code",
+              href: "features/no-code/",
             },
           ],
         },
@@ -75,8 +84,8 @@ module.exports = {
               to: "blog",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/vouchpanel/",
+              label: "Sign in",
+              href: "https://app.vouchpanel.com/",
             },
           ],
         },

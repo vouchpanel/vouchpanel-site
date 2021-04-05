@@ -8,7 +8,7 @@ export const Features = (props: {}) => {
         <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
             <dt>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                 <svg
                   className="h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -26,19 +26,17 @@ export const Features = (props: {}) => {
                 </svg>
               </div>
               <p className="mt-5 text-lg leading-6 font-medium text-gray-900">
-                Competitive exchange rates
+                Blazing Fast
               </p>
             </dt>
             <dd className="mt-2 text-base text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              impedit perferendis suscipit eaque, iste dolor cupiditate
-              blanditiis ratione.
+              Your social proofs will load off a CDN in less than 50ms.
             </dd>
           </div>
 
           <div>
             <dt>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                 <svg
                   className="h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,19 +54,17 @@ export const Features = (props: {}) => {
                 </svg>
               </div>
               <p className="mt-5 text-lg leading-6 font-medium text-gray-900">
-                No hidden fees
+                Compatible with ... everything!
               </p>
             </dt>
             <dd className="mt-2 text-base text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              impedit perferendis suscipit eaque, iste dolor cupiditate
-              blanditiis ratione.
+              Works with React, Vue, Webflow, Shopify, Squarespace, Wix, etc...
             </dd>
           </div>
 
           <div>
             <dt>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                 <svg
                   className="h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -86,13 +82,12 @@ export const Features = (props: {}) => {
                 </svg>
               </div>
               <p className="mt-5 text-lg leading-6 font-medium text-gray-900">
-                Transfers are instant
+                No code
               </p>
             </dt>
             <dd className="mt-2 text-base text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              impedit perferendis suscipit eaque, iste dolor cupiditate
-              blanditiis ratione.
+              You don't need to juggle API keys, javascript, html, and css. Get
+              started in seconds rather than hours.
             </dd>
           </div>
         </dl>
