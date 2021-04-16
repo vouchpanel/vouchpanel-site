@@ -16,7 +16,13 @@ module.exports = {
     path.resolve(__dirname, "plugins/loaders"),
     "@docusaurus/plugin-ideal-image",
   ],
+
   themeConfig: {
+    colorMode: {
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
+
     navbar: {
       title: "Vouchpanel",
       logo: {
@@ -34,6 +40,11 @@ module.exports = {
         {
           href: "https://github.com/vouchpanel",
           label: "GitHub",
+          position: "left",
+        },
+        {
+          href: "https://app.vouchpanel.com/signup",
+          label: "Signup",
           position: "right",
         },
       ],
@@ -84,8 +95,8 @@ module.exports = {
               to: "blog",
             },
             {
-              label: "Sign in",
-              href: "https://app.vouchpanel.com/",
+              label: "Sign up",
+              href: "https://app.vouchpanel.com/signup",
             },
           ],
         },
