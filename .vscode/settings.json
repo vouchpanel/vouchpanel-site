@@ -11,5 +11,7 @@
     "other": true,
     "comments": true,
     "strings": true
-  }
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true
 }
