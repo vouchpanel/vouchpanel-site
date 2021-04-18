@@ -1,0 +1,26 @@
+export function Direct({ type }) {
+  return (
+    <span>
+      If you are using {`${type}`} as a direct <code>script</code> include,
+      please go{" "}
+      <a
+        style={{ textDecoration: "underline" }}
+        href="https://vouchpanel.com/docs/vanilla"
+      >
+        here
+      </a>
+      .
+    </span>
+  );
+}
+
+export function Here({ type, brackets }) {
+  return (
+    <span>
+      If you are using {`${type}`} as a SPA or with {`${brackets}`} use the
+      instructions below. Replace the value for <code>id</code> with the
+      parameter in your wall url{" "}
+      <code>https://app.vouchpanel.com/walls/[id]</code>.
+    </span>
+  );
+}

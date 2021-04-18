@@ -3,14 +3,16 @@ import React from "react";
 export const Features = (props: {}) => {
   return (
     <div className="py-12 bg-white">
-      <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="sr-only">A better way to send money.</h2>
+      <div className="max-w-xl px-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-8">
+        <h2 className="sr-only">
+          The easiest way to embed twitter testimonials.
+        </h2>
         <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
             <dt>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
                 <svg
-                  className="h-6 w-6"
+                  className="w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -25,20 +27,20 @@ export const Features = (props: {}) => {
                   />
                 </svg>
               </div>
-              <p className="mt-5 text-lg leading-6 font-medium text-gray-900">
+              <p className="mt-5 text-lg font-medium leading-6 text-gray-900">
                 Blazing Fast
               </p>
             </dt>
             <dd className="mt-2 text-base text-gray-500">
-              Your social proofs will load off a CDN in less than 50ms.
+              Your social proofs will load off a CDN in less than 10ms.
             </dd>
           </div>
 
           <div>
             <dt>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
                 <svg
-                  className="h-6 w-6"
+                  className="w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -53,7 +55,7 @@ export const Features = (props: {}) => {
                   />
                 </svg>
               </div>
-              <p className="mt-5 text-lg leading-6 font-medium text-gray-900">
+              <p className="mt-5 text-lg font-medium leading-6 text-gray-900">
                 Compatible with ... everything!
               </p>
             </dt>
@@ -64,9 +66,9 @@ export const Features = (props: {}) => {
 
           <div>
             <dt>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+              <div className="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-md">
                 <svg
-                  className="h-6 w-6"
+                  className="w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -81,7 +83,7 @@ export const Features = (props: {}) => {
                   />
                 </svg>
               </div>
-              <p className="mt-5 text-lg leading-6 font-medium text-gray-900">
+              <p className="mt-5 text-lg font-medium leading-6 text-gray-900">
                 No code
               </p>
             </dt>

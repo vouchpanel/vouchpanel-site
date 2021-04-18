@@ -57,7 +57,7 @@ module.exports = {
           items: [
             {
               label: "Getting Started",
-              to: "docs/",
+              to: "/docs",
             },
           ],
         },
@@ -66,7 +66,7 @@ module.exports = {
           items: [
             {
               label: "Pricing",
-              to: "pricing/",
+              to: "/pricing",
             },
           ],
         },
@@ -75,15 +75,15 @@ module.exports = {
           items: [
             {
               label: "Content Delivery Network",
-              href: "features/content-delivery-network/",
+              href: "/features/content-delivery-network/",
             },
             {
               label: "Small Size",
-              href: "features/small-size/",
+              href: "/features/small-size/",
             },
             {
               label: "No Code",
-              href: "features/no-code/",
+              href: "/features/no-code/",
             },
           ],
         },
@@ -111,14 +111,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+          editUrl: "https://github.com/vouchpanel/vouchpanel-site/edit/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+          editUrl: "https://github.com/vouchpanel/vouchpanel-site/edit/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

@@ -57,16 +57,16 @@ function Footer(): JSX.Element | null {
 
   return (
     <footer className="bg-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+      <div className="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
         <nav
-          className="-mx-5 -my-2 flex flex-wrap justify-center"
+          className="flex flex-wrap justify-center -mx-5 -my-2"
           aria-label="Footer"
         >
           {links.map((linkItem) => {
             return (
               <div className="px-5 py-2">
                 <a
-                  href="#"
+                  href={linkItem.items[0].to}
                   className="text-base text-gray-500 hover:text-gray-900"
                 >
                   {linkItem.title ?? ""}
@@ -75,11 +75,11 @@ function Footer(): JSX.Element | null {
             );
           })}
         </nav>
-        {/* <div className="mt-8 flex justify-center space-x-6">
+        {/* <div className="flex justify-center mt-8 space-x-6">
         <a href="#" className="text-gray-400 hover:text-gray-500">
           <span className="sr-only">Facebook</span>
           <svg
-            className="h-6 w-6"
+            className="w-6 h-6"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -95,7 +95,7 @@ function Footer(): JSX.Element | null {
         <a href="#" className="text-gray-400 hover:text-gray-500">
           <span className="sr-only">Instagram</span>
           <svg
-            className="h-6 w-6"
+            className="w-6 h-6"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -111,7 +111,7 @@ function Footer(): JSX.Element | null {
         <a href="#" className="text-gray-400 hover:text-gray-500">
           <span className="sr-only">Twitter</span>
           <svg
-            className="h-6 w-6"
+            className="w-6 h-6"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -123,7 +123,7 @@ function Footer(): JSX.Element | null {
         <a href="#" className="text-gray-400 hover:text-gray-500">
           <span className="sr-only">GitHub</span>
           <svg
-            className="h-6 w-6"
+            className="w-6 h-6"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -139,7 +139,7 @@ function Footer(): JSX.Element | null {
         <a href="#" className="text-gray-400 hover:text-gray-500">
           <span className="sr-only">Dribbble</span>
           <svg
-            className="h-6 w-6"
+            className="w-6 h-6"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -152,7 +152,7 @@ function Footer(): JSX.Element | null {
           </svg>
         </a>
       </div> */}
-        <p className="mt-8 text-center text-base text-gray-400">
+        <p className="mt-8 text-base text-center text-gray-400">
           {copyright ? (
             <div
               className="footer__copyright"

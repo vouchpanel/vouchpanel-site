@@ -13,11 +13,11 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import LayoutProviders from "@theme/LayoutProviders";
 import LayoutHead from "@theme/LayoutHead";
-import type { Props } from "@theme/Layout";
+// import type { Props } from "@theme/Layout";
 import useKeyboardNavigation from "@theme/hooks/useKeyboardNavigation";
 import "./styles.css";
 
-function Layout(props: Props): JSX.Element {
+function Layout(props: any): JSX.Element {
   const { children, noFooter, wrapperClassName } = props;
 
   useKeyboardNavigation();
