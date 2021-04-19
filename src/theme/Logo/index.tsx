@@ -5,14 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from "react";
-import type { Props } from "@theme/Logo";
-
 import Link from "@docusaurus/Link";
-import ThemedImage from "@theme/ThemedImage";
+import { useThemeConfig } from "@docusaurus/theme-common";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { useThemeConfig } from "@docusaurus/theme-common";
+import ThemedImage from "@theme/ThemedImage";
+import React from "react";
 
 const Logo = (props: Props): JSX.Element => {
   const { isClient } = useDocusaurusContext();

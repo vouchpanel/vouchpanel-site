@@ -5,20 +5,18 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useCallback, useState, useEffect } from "react";
-import clsx from "clsx";
-
-import SearchBar from "@theme/SearchBar";
-import Toggle from "@theme/Toggle";
-import useThemeContext from "@theme/hooks/useThemeContext";
 import { useThemeConfig } from "@docusaurus/theme-common";
 import useHideableNavbar from "@theme/hooks/useHideableNavbar";
 import useLockBodyScroll from "@theme/hooks/useLockBodyScroll";
+import useThemeContext from "@theme/hooks/useThemeContext";
 import useWindowSize, { windowSizes } from "@theme/hooks/useWindowSize";
-import NavbarItem from "@theme/NavbarItem";
-import Logo from "../Logo";
 import IconMenu from "@theme/IconMenu";
-
+import NavbarItem from "@theme/NavbarItem";
+import SearchBar from "@theme/SearchBar";
+import Toggle from "@theme/Toggle";
+import clsx from "clsx";
+import React, { useCallback, useEffect, useState } from "react";
+import Logo from "../Logo";
 import styles from "./styles.module.css";
 
 // retrocompatible with v1
@@ -76,7 +74,7 @@ function Navbar(): JSX.Element {
   return (
     // <div className="relative bg-gray-50">
     //   <div className="relative pt-6 pb-4 sm:pb-24">
-    //     <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    //     <div className="px-4 mx-auto max-w-7xl sm:px-6">
     //       <nav
     //         className="relative flex items-center justify-between sm:h-10 md:justify-center"
     //         aria-label="Global"
@@ -86,20 +84,20 @@ function Navbar(): JSX.Element {
     //             <a href="#">
     //               <span className="sr-only">Workflow</span>
     //               <img
-    //                 className="h-8 w-auto sm:h-10"
+    //                 className="w-auto h-8 sm:h-10"
     //                 src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
     //                 alt=""
     //               />
     //             </a>
-    //             <div className="-mr-2 flex items-center md:hidden">
+    //             <div className="flex items-center -mr-2 md:hidden">
     //               <button
     //                 type="button"
-    //                 className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+    //                 className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-gray-50 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
     //                 aria-expanded="false"
     //               >
     //                 <span className="sr-only">Open main menu</span>
     //                 <svg
-    //                   className="h-6 w-6"
+    //                   className="w-6 h-6"
     //                   xmlns="http://www.w3.org/2000/svg"
     //                   fill="none"
     //                   viewBox="0 0 24 24"
@@ -150,7 +148,7 @@ function Navbar(): JSX.Element {
     //           <span className="inline-flex rounded-md shadow">
     //             <a
     //               href="#"
-    //               className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50"
+    //               className="inline-flex items-center px-4 py-2 text-base font-medium text-blue-600 bg-white border border-transparent rounded-md hover:bg-gray-50"
     //             >
     //               Log in
     //             </a>
@@ -158,12 +156,12 @@ function Navbar(): JSX.Element {
     //         </div>
     //       </nav>
     //     </div>
-    //     <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-50">
-    //       <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-    //         <div className="px-5 pt-4 flex items-center justify-between">
+    //     <div className="absolute inset-x-0 top-0 z-50 p-2 transition origin-top-right transform md:hidden">
+    //       <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
+    //         <div className="flex items-center justify-between px-5 pt-4">
     //           <div>
     //             <img
-    //               className="h-8 w-auto"
+    //               className="w-auto h-8"
     //               src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
     //               alt=""
     //             />
@@ -171,11 +169,11 @@ function Navbar(): JSX.Element {
     //           <div className="-mr-2">
     //             <button
     //               type="button"
-    //               className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+    //               className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
     //             >
     //               <span className="sr-only">Close menu</span>
     //               <svg
-    //                 className="h-6 w-6"
+    //                 className="w-6 h-6"
     //                 xmlns="http://www.w3.org/2000/svg"
     //                 fill="none"
     //                 viewBox="0 0 24 24"
@@ -195,35 +193,35 @@ function Navbar(): JSX.Element {
     //         <div className="px-2 pt-2 pb-3">
     //           <a
     //             href="#"
-    //             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+    //             className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
     //           >
     //             Product
     //           </a>
 
     //           <a
     //             href="#"
-    //             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+    //             className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
     //           >
     //             Features
     //           </a>
 
     //           <a
     //             href="#"
-    //             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+    //             className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
     //           >
     //             Marketplace
     //           </a>
 
     //           <a
     //             href="#"
-    //             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+    //             className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
     //           >
     //             Company
     //           </a>
     //         </div>
     //         <a
     //           href="#"
-    //           className="block w-full px-5 py-3 text-center font-medium text-blue-600 bg-gray-50 hover:bg-gray-100"
+    //           className="block w-full px-5 py-3 font-medium text-center text-blue-600 bg-gray-50 hover:bg-gray-100"
     //         >
     //           Log in
     //         </a>

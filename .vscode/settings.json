@@ -1,5 +1,8 @@
 {
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "tailwindCSS.includeLanguages": {
     "plaintext": "html",
     "typescriptreact": "html",

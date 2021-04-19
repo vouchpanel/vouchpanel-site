@@ -5,16 +5,16 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from "react";
-import clsx from "clsx";
-import SkipToContent from "@theme/SkipToContent";
 import AnnouncementBar from "@theme/AnnouncementBar";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-import LayoutProviders from "@theme/LayoutProviders";
-import LayoutHead from "@theme/LayoutHead";
 // import type { Props } from "@theme/Layout";
 import useKeyboardNavigation from "@theme/hooks/useKeyboardNavigation";
+import LayoutHead from "@theme/LayoutHead";
+import LayoutProviders from "@theme/LayoutProviders";
+import SkipToContent from "@theme/SkipToContent";
+import clsx from "clsx";
+import React from "react";
+import Footer from "../Footer";
+import Navbar from "../Navbar";
 import "./styles.css";
 
 function Layout(props: any): JSX.Element {

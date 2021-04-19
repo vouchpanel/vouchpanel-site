@@ -1,12 +1,7 @@
-import React from "react";
-import clsx from "clsx";
-import Layout from "../theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-
-import { Hero } from "../components/Hero";
-import { Features } from "../components/Features";
-import { Header } from "../components/Header";
+import React from "react";
 import { Pricing } from "../components/Pricing";
+import Layout from "../theme/Layout";
 
 export default function Home() {
   const context = useDocusaurusContext();
